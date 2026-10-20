@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="gradPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </linearGradient>
+    <linearGradient id="gradTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle Soft Glow -->
+  <circle cx="100" cy="100" r="92" fill="#FFFBEB" stroke="#FDE68A" stroke-width="4" filter="url(#softShadow)" />
+
+  <!-- Sun rays -->
+  <g transform="translate(100, 70)" stroke="#FBBF24" stroke-width="5" stroke-linecap="round">
+    <line x1="0" y1="-42" x2="0" y2="-52" />
+    <line x1="28" y1="-28" x2="36" y2="-36" />
+    <line x1="42" y1="0" x2="52" y2="0" />
+    <line x1="-28" y1="-28" x2="-36" y2="-36" />
+    <line x1="-42" y1="0" x2="-52" y2="0" />
+  </g>
+
+  <!-- Cheerful Smiling Sun Body -->
+  <circle cx="100" cy="70" r="34" fill="url(#gradSun)" filter="url(#softShadow)" />
+  
+  <!-- Friendly Sun Eyes and Smile -->
+  <ellipse cx="90" cy="65" rx="3.5" ry="5" fill="#78350F" />
+  <ellipse cx="110" cy="65" rx="3.5" ry="5" fill="#78350F" />
+  <ellipse cx="91.5" cy="63.5" rx="1.2" ry="1.8" fill="#FFFFFF" />
+  <ellipse cx="111.5" cy="63.5" rx="1.2" ry="1.8" fill="#FFFFFF" />
+  <path d="M 88 77 Q 100 89 112 77" fill="none" stroke="#78350F" stroke-width="3.5" stroke-linecap="round" />
+  <!-- Rosy Cheeks -->
+  <circle cx="83" cy="73" r="4.5" fill="#F43F5E" opacity="0.6" />
+  <circle cx="117" cy="73" r="4.5" fill="#F43F5E" opacity="0.6" />
+
+  <!-- Open Book of Knowledge / Wings of Joy -->
+  <g filter="url(#softShadow)">
+    <path d="M 100 132 C 85 118 60 118 42 126 C 42 142 42 144 42 148 C 62 138 85 140 100 152 Z" fill="url(#gradBlue)" />
+    <path d="M 100 132 C 115 118 140 118 158 126 C 158 142 158 144 158 148 C 138 138 115 140 100 152 Z" fill="url(#gradTeal)" />
+    <!-- Center spine marker -->
+    <path d="M 100 126 L 100 152" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Letter 'K' playful monogram badge in center -->
+  <g transform="translate(100, 114)">
+    <circle cx="0" cy="0" r="16" fill="url(#gradPink)" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Fredoka', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF">K</text>
+  </g>
+
+  <!-- Playful Little Sparkling Stars -->
+  <path d="M 46 62 Q 49 68 55 70 Q 49 72 46 78 Q 43 72 37 70 Q 43 68 46 62 Z" fill="#F43F5E" />
+  <path d="M 152 64 Q 155 70 161 72 Q 155 74 152 80 Q 149 74 143 72 Q 149 70 152 64 Z" fill="#F59E0B" />
+</svg>
