@@ -20,7 +20,7 @@ export default function Navbar() {
     const hour = now.getHours();
     const min = now.getMinutes();
     const currentDec = hour + min / 60;
-    
+
     // Open if Mon-Sat (1 to 6) and between 8.5 (8:30) and 19.5 (19:30)
     const open = day !== 0 && currentDec >= 8.5 && currentDec < 19.5;
     setIsOpenNow(open);
@@ -36,11 +36,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-slate-900/5 py-2 sm:py-2.5 border-b border-brand-100/50'
           : 'bg-white/90 backdrop-blur-sm py-2.5 sm:py-3 border-b border-slate-100'
-      }`}
+        }`}
     >
       {/* Top Professional Info Bar */}
       <div className="section-container pb-2 mb-2 border-b border-slate-100/80">
@@ -53,9 +52,8 @@ export default function Navbar() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
               )}
               <span
-                className={`relative inline-flex rounded-full h-2 w-2 ${
-                  isOpenNow ? 'bg-emerald-500' : 'bg-slate-400'
-                }`}
+                className={`relative inline-flex rounded-full h-2 w-2 ${isOpenNow ? 'bg-emerald-500' : 'bg-slate-400'
+                  }`}
               />
             </span>
             <Clock className="w-3.5 h-3.5 text-emerald-600" />
@@ -95,9 +93,8 @@ export default function Navbar() {
         <div className="hidden sm:flex lg:hidden items-center justify-between text-xs gap-2">
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-700 border border-emerald-200">
             <span
-              className={`w-2 h-2 rounded-full ${
-                isOpenNow ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'
-              }`}
+              className={`w-2 h-2 rounded-full ${isOpenNow ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'
+                }`}
             />
             <span>Mon–Sat 8:30 AM – 7:30 PM</span>
           </div>
@@ -124,9 +121,8 @@ export default function Navbar() {
           {/* Status badge */}
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-700 border border-emerald-200/80 text-[11px] shadow-2xs">
             <span
-              className={`w-1.5 h-1.5 rounded-full ${
-                isOpenNow ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'
-              }`}
+              className={`w-1.5 h-1.5 rounded-full ${isOpenNow ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'
+                }`}
             />
             <span>{isOpenNow ? 'Open Now' : 'Closed'}</span>
             <span className="text-emerald-500/60 font-600">·</span>

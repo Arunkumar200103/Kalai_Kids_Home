@@ -15,12 +15,12 @@ export default function Hero() {
         {/* Left content: 7 cols */}
         <div className="lg:col-span-7 flex flex-col gap-6 animate-fade-in-up">
           {/* Premium Glass Badge */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-brand-200/70 shadow-xs w-fit">
-            <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
-            <span className="text-xs font-700 text-slate-700 uppercase tracking-wider">
+          <div className="inline-flex flex-wrap items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-2xl sm:rounded-full bg-white/95 backdrop-blur-md border border-brand-200/70 shadow-xs w-fit max-w-full">
+            <span className="flex items-center gap-1.5 text-xs font-700 text-slate-700 uppercase tracking-wider">
+              <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse flex-shrink-0" />
               Kalai Kids Home · 2 Campuses
             </span>
-            <span className="w-1 h-1 rounded-full bg-slate-300" />
+            <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-slate-300" />
             <span className="text-xs font-700 text-brand-600">Velachery & Adambakkam</span>
           </div>
 
@@ -64,7 +64,7 @@ export default function Hero() {
               <span>Enroll Your Child</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
             </a>
-            
+
             <a
               href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
               className="inline-flex justify-center items-center gap-2 px-6 py-3.5 rounded-full text-base font-700 text-slate-800 bg-white border border-slate-200 hover:border-brand-300 hover:bg-brand-50/50 shadow-sm transition-all w-full sm:w-auto"

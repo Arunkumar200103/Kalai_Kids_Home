@@ -100,7 +100,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-12 gap-8 items-start">
           {/* Left: Dual Branch Cards & Map (5 cols) */}
           <div ref={ref} className={`lg:col-span-5 flex flex-col gap-6 reveal ${visible ? 'visible' : ''}`}>
-            
+
             {/* Campus Selector Tabs */}
             <div className="bg-white p-2 rounded-2xl border border-slate-200/90 shadow-sm">
               <p className="text-[11px] font-800 text-slate-400 uppercase tracking-wider px-2 py-1 mb-1">
@@ -117,16 +117,14 @@ export default function Contact() {
                         setSelectedBranchId(b.id);
                         setForm((prev) => ({ ...prev, branch: b.id }));
                       }}
-                      className={`text-left p-3 rounded-xl transition-all border ${
-                        isSelected
+                      className={`text-left p-3 rounded-xl transition-all border ${isSelected
                           ? 'bg-brand-500 text-white border-brand-500 shadow-md shadow-brand-500/25 scale-[1.02]'
                           : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200/70'
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center justify-between mb-1">
-                        <span className={`text-[10px] font-800 uppercase tracking-wider px-1.5 py-0.5 rounded ${
-                          isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
-                        }`}>
+                        <span className={`text-[10px] font-800 uppercase tracking-wider px-1.5 py-0.5 rounded ${isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
+                          }`}>
                           {b.id === 'velachery' ? 'Branch 1' : 'Branch 2'}
                         </span>
                         <div className="flex items-center gap-0.5">
@@ -333,11 +331,10 @@ export default function Contact() {
                       Select Preferred Campus <span className="text-rose-500">*</span>
                     </label>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                      <label className={`flex items-center gap-2.5 p-3 rounded-xl border cursor-pointer transition-all ${
-                        form.branch === 'velachery'
+                      <label className={`flex items-center gap-2.5 p-3 rounded-xl border cursor-pointer transition-all ${form.branch === 'velachery'
                           ? 'border-brand-500 bg-brand-50/70 text-brand-900 font-700 shadow-xs'
                           : 'border-slate-200 hover:border-slate-300 text-slate-700 font-500'
-                      }`}>
+                        }`}>
                         <input
                           type="radio"
                           name="branch"
@@ -352,11 +349,10 @@ export default function Contact() {
                         </div>
                       </label>
 
-                      <label className={`flex items-center gap-2.5 p-3 rounded-xl border cursor-pointer transition-all ${
-                        form.branch === 'adambakkam'
+                      <label className={`flex items-center gap-2.5 p-3 rounded-xl border cursor-pointer transition-all ${form.branch === 'adambakkam'
                           ? 'border-brand-500 bg-brand-50/70 text-brand-900 font-700 shadow-xs'
                           : 'border-slate-200 hover:border-slate-300 text-slate-700 font-500'
-                      }`}>
+                        }`}>
                         <input
                           type="radio"
                           name="branch"
@@ -371,11 +367,10 @@ export default function Contact() {
                         </div>
                       </label>
 
-                      <label className={`flex items-center gap-2.5 p-3 rounded-xl border cursor-pointer transition-all ${
-                        form.branch === 'any'
+                      <label className={`flex items-center gap-2.5 p-3 rounded-xl border cursor-pointer transition-all ${form.branch === 'any'
                           ? 'border-brand-500 bg-brand-50/70 text-brand-900 font-700 shadow-xs'
                           : 'border-slate-200 hover:border-slate-300 text-slate-700 font-500'
-                      }`}>
+                        }`}>
                         <input
                           type="radio"
                           name="branch"
