@@ -38,13 +38,13 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-slate-900/5 py-2.5 border-b border-brand-100/50'
-          : 'bg-white/90 backdrop-blur-sm py-3 border-b border-slate-100'
+          ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-slate-900/5 py-2 sm:py-2.5 border-b border-brand-100/50'
+          : 'bg-white/90 backdrop-blur-sm py-2.5 sm:py-3 border-b border-slate-100'
       }`}
     >
       {/* Top Professional Info Bar */}
       <div className="section-container pb-2 mb-2 border-b border-slate-100/80">
-        {/* Desktop View */}
+        {/* Desktop View (>= 1024px) */}
         <div className="hidden lg:flex items-center justify-between gap-3 text-xs">
           {/* Left: Operating Hours with glowing indicator */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 font-700 border border-emerald-200/80 shadow-xs">
@@ -64,13 +64,13 @@ export default function Navbar() {
             </span>
           </div>
 
-          {/* Middle: 2 Branches Badge */}
+          {/* Middle: 2 Branches Badge with Logo Icon */}
           <button
             type="button"
             onClick={() => handleNavClick('#contact')}
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-50 hover:bg-brand-100 text-brand-800 font-700 border border-brand-200/80 shadow-xs transition-colors"
           >
-            <Building2 className="w-3.5 h-3.5 text-brand-600 flex-shrink-0" />
+            <img src="/logo-icon.png" alt="Kalai Kids" className="w-4 h-4 object-contain rounded-sm" />
             <span>2 Campuses: Velachery & Adambakkam</span>
           </button>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Tablet / Medium View */}
+        {/* Tablet View (640px to 1023px) */}
         <div className="hidden sm:flex lg:hidden items-center justify-between text-xs gap-2">
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-700 border border-emerald-200">
             <span
@@ -104,9 +104,9 @@ export default function Navbar() {
 
           <button
             onClick={() => handleNavClick('#contact')}
-            className="inline-flex items-center gap-1 text-slate-700 font-700 text-xs hover:text-brand-600"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-700 text-xs border border-slate-200 transition-colors"
           >
-            <MapPin className="w-3.5 h-3.5 text-brand-500" />
+            <img src="/logo-icon.png" alt="Kalai Kids" className="w-3.5 h-3.5 object-contain rounded-sm" />
             <span>Velachery & Adambakkam</span>
           </button>
 
@@ -119,40 +119,43 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Small Mobile View */}
-        <div className="flex sm:hidden items-center justify-between text-[11px] gap-1">
-          <span className="inline-flex items-center gap-1 text-emerald-800 font-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+        {/* Mobile View (< 640px): Clean, single-line, perfectly balanced */}
+        <div className="flex sm:hidden items-center justify-between gap-2">
+          {/* Status badge */}
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-700 border border-emerald-200/80 text-[11px] shadow-2xs">
             <span
               className={`w-1.5 h-1.5 rounded-full ${
-                isOpenNow ? 'bg-emerald-500' : 'bg-slate-400'
+                isOpenNow ? 'bg-emerald-500 animate-pulse' : 'bg-slate-400'
               }`}
             />
-            {isOpenNow ? 'Open Now' : 'Closed'} · 8:30 AM – 7:30 PM
-          </span>
-          <span className="text-slate-600 font-700 text-[10px]">
-            Velachery · Adambakkam
-          </span>
-          <a
-            href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
-            className="inline-flex items-center gap-1 text-brand-600 font-700 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200"
+            <span>{isOpenNow ? 'Open Now' : 'Closed'}</span>
+            <span className="text-emerald-500/60 font-600">·</span>
+            <span className="text-emerald-700">8:30 AM – 7:30 PM</span>
+          </div>
+
+          {/* 2 Campuses Badge with Logo Icon */}
+          <button
+            type="button"
+            onClick={() => handleNavClick('#contact')}
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-700 border border-slate-200/80 text-[11px] transition-colors shadow-2xs flex-shrink-0"
           >
-            <Phone className="w-3 h-3 text-brand-600" />
-            <span>Call</span>
-          </a>
+            <img src="/logo-icon.png" alt="Kalai Kids" className="w-3.5 h-3.5 object-contain rounded-sm" />
+            <span>2 Campuses</span>
+          </button>
         </div>
       </div>
 
-      <nav className="section-container flex items-center justify-between">
+      <nav className="section-container flex items-center justify-between gap-3">
         {/* Brand Logo */}
         <button
           onClick={() => handleNavClick('#home')}
-          className="flex items-center gap-2 group text-left py-1"
+          className="flex items-center gap-2 group text-left py-0.5"
           aria-label="Kalai Kids Preschool & Daycare Home"
         >
           <img
             src="/kalai_logo_clean.png"
             alt="Kalai Kids Preschool & Daycare Velachery and Adambakkam"
-            className="h-9 sm:h-11 md:h-12 w-auto max-w-[190px] sm:max-w-[250px] md:max-w-[300px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
+            className="h-9 sm:h-11 md:h-12 w-auto max-w-[170px] sm:max-w-[250px] md:max-w-[300px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
           />
         </button>
 
@@ -170,7 +173,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Right CTA */}
+        {/* Desktop Right CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <button
             onClick={() => handleNavClick('#contact')}
@@ -180,14 +183,32 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile menu toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors"
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile & Tablet Actions (Unified baseline alignment) */}
+        <div className="flex lg:hidden items-center gap-2 flex-shrink-0">
+          <a
+            href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
+            className="inline-flex items-center justify-center gap-1.5 h-9 px-3 rounded-xl bg-brand-50 hover:bg-brand-100 text-brand-700 font-700 text-xs border border-brand-200/80 transition-colors shadow-2xs"
+            aria-label={`Call ${schoolInfo.phone}`}
+          >
+            <Phone className="w-3.5 h-3.5 text-brand-600 fill-brand-600" />
+            <span className="font-800">Call</span>
+          </a>
+
+          <button
+            onClick={() => handleNavClick('#contact')}
+            className="inline-flex items-center justify-center h-9 px-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-800 text-xs shadow-sm shadow-brand-500/20 transition-all active:scale-95"
+          >
+            Apply
+          </button>
+
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="w-9 h-9 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors flex items-center justify-center border border-slate-200/80 bg-white"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X className="w-5 h-5 text-slate-900" /> : <Menu className="w-5 h-5 text-slate-900" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Drawer */}
