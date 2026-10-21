@@ -21,14 +21,14 @@ export default function Footer() {
               <div className="bg-white rounded-2xl p-2.5 sm:p-3 inline-block shadow-md">
                 <img
                   src="/kalai_logo_clean.png"
-                  alt="Kalai Kids Preschool & Daycare Velachery and Adambakkam"
+                  alt="Kalai Kids Home — Velachery and Adambakkam"
                   className="h-10 sm:h-12 w-auto max-w-[220px] sm:max-w-[260px] object-contain"
                 />
               </div>
             </div>
 
             <p className="text-sm text-slate-400 leading-relaxed mb-5 font-500">
-              Welcome to Kalai Kids Preschool & Daycare, a safe, caring, and joyful learning environment where
+              Welcome to Kalai Kids Home, a safe, caring, and joyful learning environment where
               children learn, play, and grow with confidence across our Velachery and Adambakkam campuses.
             </p>
 
@@ -151,7 +151,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs sm:text-sm text-slate-400 flex items-center gap-1.5 font-500">
-            © {new Date().getFullYear()} Kalai Kids Preschool & Daycare. Made with
+            © {new Date().getFullYear()} Kalai Kids Home. Made with
             <Heart className="w-4 h-4 text-rose-500 fill-rose-500" />
             for little learners in Velachery & Adambakkam, Chennai
           </p>

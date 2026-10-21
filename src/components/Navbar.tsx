@@ -70,7 +70,7 @@ export default function Navbar() {
             onClick={() => handleNavClick('#contact')}
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-50 hover:bg-brand-100 text-brand-800 font-700 border border-brand-200/80 shadow-xs transition-colors"
           >
-            <img src="/logo-icon.png" alt="Kalai Kids" className="w-4 h-4 object-contain rounded-sm" />
+            <img src="/logo-icon.png" alt="Kalai Kids Home" className="w-4 h-4 object-contain rounded-sm" />
             <span>2 Campuses: Velachery & Adambakkam</span>
           </button>
 
@@ -106,7 +106,7 @@ export default function Navbar() {
             onClick={() => handleNavClick('#contact')}
             className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-700 text-xs border border-slate-200 transition-colors"
           >
-            <img src="/logo-icon.png" alt="Kalai Kids" className="w-3.5 h-3.5 object-contain rounded-sm" />
+            <img src="/logo-icon.png" alt="Kalai Kids Home" className="w-3.5 h-3.5 object-contain rounded-sm" />
             <span>Velachery & Adambakkam</span>
           </button>
 
@@ -139,7 +139,7 @@ export default function Navbar() {
             onClick={() => handleNavClick('#contact')}
             className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 hover:bg-brand-50 text-slate-700 hover:text-brand-700 font-700 border border-slate-200/80 text-[11px] transition-colors shadow-2xs flex-shrink-0"
           >
-            <img src="/logo-icon.png" alt="Kalai Kids" className="w-3.5 h-3.5 object-contain rounded-sm" />
+            <img src="/logo-icon.png" alt="Kalai Kids Home" className="w-3.5 h-3.5 object-contain rounded-sm" />
             <span>2 Campuses</span>
           </button>
         </div>
@@ -150,11 +150,11 @@ export default function Navbar() {
         <button
           onClick={() => handleNavClick('#home')}
           className="flex items-center gap-2 group text-left py-0.5"
-          aria-label="Kalai Kids Preschool & Daycare Home"
+          aria-label="Kalai Kids Home"
         >
           <img
             src="/kalai_logo_clean.png"
-            alt="Kalai Kids Preschool & Daycare Velachery and Adambakkam"
+            alt="Kalai Kids Home — Velachery and Adambakkam"
             className="h-9 sm:h-11 md:h-12 w-auto max-w-[170px] sm:max-w-[250px] md:max-w-[300px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
           />
         </button>

@@ -110,7 +110,7 @@ export default function Gallery() {
           </div>
 
           <h2 className="font-display font-800 text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-[1.14] tracking-tight">
-            Real Moments, Real Smiles at <span className="gradient-text">Kalai Kids</span>
+            Real Moments, Real Smiles at <span className="gradient-text">Kalai Kids Home</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed font-500">
             From our grand 9th Annual Day stage celebrations to joyful daily storytelling circles,

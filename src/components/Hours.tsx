@@ -40,7 +40,7 @@ export default function Hours() {
             Flexible Timings for Working Parents
           </h2>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Kalai Kids offers extended preschool and daycare hours from morning to evening across both our
+            Kalai Kids Home offers extended preschool and daycare hours from morning to evening across both our
             Velachery and Adambakkam campuses, providing a safe second home for your child.
           </p>
         </div>

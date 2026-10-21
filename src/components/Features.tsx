@@ -61,7 +61,7 @@ export default function Features() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-flex items-center gap-2 text-sm font-800 text-brand-600 uppercase tracking-widest mb-3">
             <span className="w-8 h-1 bg-brand-500 rounded-full" />
-            Why Choose Kalai Kids
+            Why Choose Kalai Kids Home
             <span className="w-8 h-1 bg-brand-500 rounded-full" />
           </span>
           <h2 className="font-display font-800 text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-[1.15] tracking-tight">

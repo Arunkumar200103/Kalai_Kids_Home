@@ -19,7 +19,7 @@ export default function VideoTour() {
             <span className="w-8 h-1 bg-brand-400 rounded-full" />
           </span>
           <h2 className="font-display font-700 text-3xl md:text-4xl text-slate-800 leading-tight">
-            A Glimpse into Kalai Kids
+            A Glimpse into Kalai Kids Home
           </h2>
           <p className="text-slate-600 mt-4 leading-relaxed">
             Experience our vibrant campuses, interactive classrooms, and the joyful environment where learning comes alive.
@@ -32,7 +32,7 @@ export default function VideoTour() {
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/O-L2H7Q5wO8?autoplay=0&controls=1&rel=0&showinfo=0&modestbranding=1"
-              title="Kalai Kids Preschool Tour"
+              title="Kalai Kids Home Tour"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>

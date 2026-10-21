@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-brand-200/70 shadow-xs w-fit">
             <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
             <span className="text-xs font-700 text-slate-700 uppercase tracking-wider">
-              Kalai Kids · 2 Campuses
+              Kalai Kids Home · 2 Campuses
             </span>
             <span className="w-1 h-1 rounded-full bg-slate-300" />
             <span className="text-xs font-700 text-brand-600">Velachery & Adambakkam</span>
@@ -133,7 +133,7 @@ export default function Hero() {
                 <div className="absolute bottom-3 left-4 right-4 z-20 hidden sm:block">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/70 backdrop-blur-md text-white text-[11px] font-700 border border-white/20 shadow-md">
                     <Sparkles className="w-3 h-3 text-amber-400" />
-                    <span>Kalai Kids 9th Annual Day</span>
+                    <span>Kalai Kids Home 9th Annual Day</span>
                   </span>
                 </div>
               </div>

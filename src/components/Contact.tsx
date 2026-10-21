@@ -44,7 +44,7 @@ export default function Contact() {
   const buildWhatsappUrl = () => {
     const campusLabel = getBranchLabel(form.branch);
     const lines = [
-      `*New Admission Enquiry — Kalai Kids (${form.branch === 'velachery' ? 'Velachery' : form.branch === 'adambakkam' ? 'Adambakkam' : 'Chennai'})*`,
+      `*New Admission Enquiry — Kalai Kids Home (${form.branch === 'velachery' ? 'Velachery' : form.branch === 'adambakkam' ? 'Adambakkam' : 'Chennai'})*`,
       ``,
       `*Parent Name:* ${form.parentName.trim()}`,
       `*Child Name & Age:* ${form.childName.trim()}`,
@@ -93,7 +93,7 @@ export default function Contact() {
             Visit Our Campuses or Apply Online
           </h2>
           <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed font-500">
-            Kalai Kids welcomes you at our two convenient locations in <strong className="text-slate-800">Velachery</strong> and <strong className="text-slate-800">Adambakkam</strong>. Select a campus below to view directions, map, and contact info.
+            Kalai Kids Home welcomes you at our two convenient locations in <strong className="text-slate-800">Velachery</strong> and <strong className="text-slate-800">Adambakkam</strong>. Select a campus below to view directions, map, and contact info.
           </p>
         </div>
 
@@ -248,7 +248,7 @@ export default function Contact() {
               {/* WhatsApp Quick Action */}
               <a
                 href={`https://wa.me/919043755433?text=${encodeURIComponent(
-                  `Hello Kalai Kids! I would like to enquire about preschool & daycare admissions for ${activeBranch.shortName}.`
+                  `Hello Kalai Kids Home! I would like to enquire about preschool & daycare admissions for ${activeBranch.shortName}.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -279,7 +279,7 @@ export default function Contact() {
                     Enquiry Formatted for WhatsApp!
                   </h3>
                   <p className="text-slate-600 max-w-md text-sm font-500 leading-relaxed mb-6">
-                    Thank you! Your child's details for <strong className="text-slate-900">{getBranchLabel(form.branch)}</strong> have been routed to Kalai Kids admissions at <strong className="text-slate-900">+91 90437 55433</strong>. Uma Ma'am and our faculty will respond shortly.
+                    Thank you! Your child's details for <strong className="text-slate-900">{getBranchLabel(form.branch)}</strong> have been routed to Kalai Kids Home admissions at <strong className="text-slate-900">+91 90437 55433</strong>. Uma Ma'am and our faculty will respond shortly.
                   </p>
 
                   <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-md justify-center">
@@ -498,7 +498,7 @@ export default function Contact() {
 
                   <p className="text-xs text-slate-500 text-center font-600 pt-1 flex items-center justify-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span>Connects directly to Kalai Kids Admissions (+91 90437 55433)</span>
+                    <span>Connects directly to Kalai Kids Home Admissions (+91 90437 55433)</span>
                   </p>
                 </form>
               )}

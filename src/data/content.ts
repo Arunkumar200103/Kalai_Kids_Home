@@ -39,7 +39,7 @@ export interface Branch {
 export const branches: Branch[] = [
   {
     id: 'velachery',
-    name: 'Kalai Kids — Velachery Branch',
+    name: 'Kalai Kids Home — Velachery Branch',
     shortName: 'Velachery Campus',
     campusTitle: 'Velachery Campus (Branch 1)',
     tagline: 'Near Phoenix Marketcity & Dhandeeswaram',
@@ -59,7 +59,7 @@ export const branches: Branch[] = [
   },
   {
     id: 'adambakkam',
-    name: 'Kalai Kids — Adambakkam Branch',
+    name: 'Kalai Kids Home — Adambakkam Branch',
     shortName: 'Adambakkam Campus',
     campusTitle: 'Adambakkam Campus (Branch 2)',
     tagline: 'Near St. Thomas Mount / Guindy & City Links',
@@ -79,8 +79,9 @@ export const branches: Branch[] = [
 ];
 
 export const schoolInfo = {
-  name: 'Kalai Kids Preschool & Daycare',
-  shortName: 'Kalai Kids',
+  name: 'Kalai Kids Home',
+  fullName: 'Kalai Kids Home',
+  shortName: 'Kalai Kids Home',
   tagline: 'Where Children Learn, Play & Grow with Confidence',
   established: 2014,
   branchesCount: 2,
@@ -109,10 +110,10 @@ export const schoolHours: SchoolHours[] = [
 ];
 
 export const aboutContent = {
-  title: 'Welcome to Kalai Kids Preschool & Daycare',
+  title: 'Welcome to Kalai Kids Home',
   subheading: '2 Campuses in Chennai: Lakshmi Nagar (Velachery) & Ramkrishna Nagar (Adambakkam)',
   mainDescription:
-    'Welcome to Kalai Kids Preschool & Daycare, a safe, caring, and joyful learning environment where children learn, play, and grow with confidence across our Velachery and Adambakkam campuses. We focus on early childhood education through fun and engaging activities, including basic academics, storytelling, art and craft, music, games, communication skills, and social development. Our experienced teachers provide individual attention and encourage creativity, curiosity, and good habits. We aim to build a strong foundation for your child’s future in a friendly and nurturing atmosphere. Enroll your little one today and give them a happy start to their learning journey!',
+    'Welcome to Kalai Kids Home, a safe, caring, and joyful learning environment where children learn, play, and grow with confidence across our Velachery and Adambakkam campuses. We focus on early childhood education through fun and engaging activities, including basic academics, storytelling, art and craft, music, games, communication skills, and social development. Our experienced teachers provide individual attention and encourage creativity, curiosity, and good habits. We aim to build a strong foundation for your child’s future in a friendly and nurturing atmosphere. Enroll your little one today and give them a happy start to their learning journey!',
   highlights: [
     'Basic academics & school readiness',
     'Storytelling & Tamil & English language fluency',
@@ -242,7 +243,7 @@ export const features = [
     icon: 'Smile',
     title: 'Kids Eager to Go to School Every Day',
     description:
-      'Children love coming to Kalai Kids! The joyful, stress-free atmosphere turns learning into an exciting daily adventure they cherish.',
+      'Children love coming to Kalai Kids Home! The joyful, stress-free atmosphere turns learning into an exciting daily adventure they cherish.',
     color: 'rose',
   },
 ];
@@ -293,7 +294,7 @@ export const galleryImages: GalleryItem[] = [
     url: heroImg,
     title: 'Montessori Activity & Cognitive Play',
     subtitle: 'Hands-on wooden blocks, geometry puzzles, and collaborative peer learning',
-    alt: 'Joyful Learning & Play at Kalai Kids Velachery',
+    alt: 'Joyful Learning & Play at Kalai Kids Home — Velachery',
     tag: 'Classroom',
     badge: 'Daily Activity',
   },

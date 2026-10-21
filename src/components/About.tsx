@@ -68,7 +68,7 @@ export default function About() {
             <div>
               <span className="inline-flex items-center gap-2 text-sm font-800 text-brand-600 uppercase tracking-widest mb-2">
                 <span className="w-8 h-1 bg-brand-500 rounded-full" />
-                About Kalai Kids
+                About Kalai Kids Home
               </span>
               <h2 className="font-display font-800 text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-[1.15] tracking-tight">
                 A Safe, Caring & Joyful Start to Learning

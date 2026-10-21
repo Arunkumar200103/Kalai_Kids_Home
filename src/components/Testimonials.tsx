@@ -63,7 +63,7 @@ export default function Testimonials() {
           </h2>
           <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed font-500">
             Read real, heartfelt stories from parents whose little ones are learning, speaking fluently,
-            and thriving at Kalai Kids across Velachery & Adambakkam.
+            and thriving at Kalai Kids Home across Velachery & Adambakkam.
           </p>
         </div>
 
