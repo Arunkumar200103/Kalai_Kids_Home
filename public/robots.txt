@@ -6,4 +6,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://kalaikidshome.com/sitemap.xml
+Sitemap: https://kalaikids.com/sitemap.xml

@@ -30,7 +30,7 @@ export default function FloatingWhatsApp() {
     }, []);
 
     const whatsappMessage = encodeURIComponent(
-        'Hello Kalai Kids Home! I am looking for preschool & daycare admission details for my child (Velachery / Adambakkam campus). Please share more information.'
+        'Hello Kalai Kids! I am looking for preschool & daycare admission details for my child (Velachery / Adambakkam campus). Please share more information.'
     );
 
     const whatsappUrl = `https://wa.me/919043755433?text=${whatsappMessage}`;
@@ -73,7 +73,7 @@ export default function FloatingWhatsApp() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chat with Kalai Kids Home on WhatsApp (+91 90437 55433)"
+                aria-label="Chat with Kalai Kids on WhatsApp (+91 90437 55433)"
                 className="group relative flex items-center gap-3 p-3.5 sm:p-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white shadow-2xl shadow-emerald-600/40 hover:shadow-emerald-600/60 hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-emerald-300"
             >
                 {/* Pulsing beacon ring around button */}

@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="inline-flex flex-wrap items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-2xl sm:rounded-full bg-white/95 backdrop-blur-md border border-brand-200/70 shadow-xs w-fit max-w-full">
             <span className="flex items-center gap-1.5 text-xs font-700 text-slate-700 uppercase tracking-wider">
               <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse flex-shrink-0" />
-              Kalai Kids Home · 2 Campuses
+              Kalai Kids · 2 Campuses
             </span>
             <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-slate-300" />
             <span className="text-xs font-700 text-brand-600">Velachery & Adambakkam</span>
@@ -27,14 +27,14 @@ export default function Hero() {
           {/* Heading with elegant typography */}
           <div>
             <h1 className="font-display font-800 text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.12] tracking-tight">
-              <span className="sr-only">Kalai Kids Home — Preschool & Daycare in Velachery & Adambakkam, Chennai. </span>
+              <span className="sr-only">Kalai Kids — Preschool & Daycare in Velachery & Adambakkam, Chennai. </span>
               Where Children <span className="gradient-text">Learn, Play & Grow</span> with Confidence
             </h1>
           </div>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-500 max-w-2xl">
-            A safe, caring, and joyful early learning home in <strong className="text-slate-800 font-700">Velachery</strong> and <strong className="text-slate-800 font-700">Adambakkam</strong>, Chennai.
+            A safe, caring, and joyful early learning center in <strong className="text-slate-800 font-700">Velachery</strong> and <strong className="text-slate-800 font-700">Adambakkam</strong>, Chennai.
             Through fun activities, storytelling, creative arts, and individual care from loving mentors,
             we build a strong, happy foundation for your child's future.
           </p>
@@ -125,7 +125,7 @@ export default function Hero() {
               <div className="w-full h-full blob-shape overflow-hidden relative">
                 <img
                   src={heroImages.main}
-                  alt="Kalai Kids Home Montessori School 9th Annual Day Celebration"
+                  alt="Kalai Kids Montessori School 9th Annual Day Celebration"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent" />
@@ -133,7 +133,7 @@ export default function Hero() {
                 <div className="absolute bottom-3 left-4 right-4 z-20 hidden sm:block">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/70 backdrop-blur-md text-white text-[11px] font-700 border border-white/20 shadow-md">
                     <Sparkles className="w-3 h-3 text-amber-400" />
-                    <span>Kalai Kids Home 9th Annual Day</span>
+                    <span>Kalai Kids 9th Annual Day</span>
                   </span>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function Hero() {
               <div className="w-full h-full blob-shape-2 overflow-hidden relative">
                 <img
                   src={heroImages.secondary}
-                  alt="Kalai Kids Home Kindergarten Convocation & Graduation Day"
+                  alt="Kalai Kids Kindergarten Convocation & Graduation Day"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-2 left-2 right-2 hidden sm:block">
@@ -165,38 +165,11 @@ export default function Hero() {
             >
               <img
                 src={heroImages.tertiary}
-                alt="Kalai Kids Home Cultural Dance Performance on Stage"
+                alt="Kalai Kids Cultural Dance Performance on Stage"
                 className="w-full h-full object-cover rounded-[1.25rem]"
               />
             </div>
 
-            {/* Floating Loving Mentors Badge */}
-            <div
-              className="absolute top-1/3 -right-4 sm:-right-8 glass-panel rounded-2xl p-3 sm:p-4 flex items-center gap-3 animate-float z-30 shadow-xl"
-              style={{ animationDelay: '0.8s' }}
-            >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center text-white shadow-md shadow-rose-500/30">
-                <Heart className="w-5 h-5 sm:w-6 sm:h-6 fill-white" />
-              </div>
-              <div>
-                <p className="text-xs sm:text-sm font-800 text-slate-900 leading-tight">Loving Mentors</p>
-                <p className="text-[10px] sm:text-xs font-700 text-brand-600">Uma Ma’am & Team</p>
-              </div>
-            </div>
-
-            {/* Floating Speech & Confidence Badge */}
-            <div
-              className="absolute -top-4 left-6 glass-panel rounded-2xl p-2.5 sm:p-3 flex items-center gap-2.5 animate-float z-30 shadow-lg"
-              style={{ animationDelay: '1.8s' }}
-            >
-              <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-amber-600 fill-amber-500" />
-              </div>
-              <div>
-                <p className="text-xs font-800 text-slate-800">Fluent Speech</p>
-                <p className="text-[10px] font-700 text-slate-500">Tamil & English</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

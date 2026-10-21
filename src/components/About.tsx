@@ -33,7 +33,7 @@ export default function About() {
                                 <div className="w-full h-full blob-shape-2 overflow-hidden aspect-[4/3] relative">
                                     <img
                                         src={aboutImages.main}
-                                        alt="Kalai Kids Home Kindergarten Convocation & Graduation Day Celebration"
+                                        alt="Kalai Kids Kindergarten Convocation & Graduation Day Celebration"
                                         className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/10 to-transparent mix-blend-overlay" />
@@ -44,7 +44,7 @@ export default function About() {
                             <div className="absolute -bottom-8 -right-4 sm:-right-8 w-44 sm:w-52 h-44 sm:h-52 blob-shape overflow-hidden glass-panel p-2 shadow-xl animate-float hidden sm:block z-20">
                                 <img
                                     src={aboutImages.secondary}
-                                    alt="Kalai Kids Home Annual Day Cultural Dance Performance"
+                                    alt="Kalai Kids Annual Day Cultural Dance Performance"
                                     className="w-full h-full object-cover blob-shape"
                                 />
                             </div>
@@ -68,7 +68,7 @@ export default function About() {
                         <div>
                             <span className="inline-flex items-center gap-2 text-sm font-800 text-brand-600 uppercase tracking-widest mb-2">
                                 <span className="w-8 h-1 bg-brand-500 rounded-full" />
-                                About Kalai Kids Home
+                                About Kalai Kids
                             </span>
                             <h2 className="font-display font-800 text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-[1.15] tracking-tight">
                                 A Safe, Caring & Joyful Start to Learning
