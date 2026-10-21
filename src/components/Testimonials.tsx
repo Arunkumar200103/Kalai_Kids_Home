@@ -59,11 +59,11 @@ export default function Testimonials() {
             <span className="w-8 h-1 bg-brand-500 rounded-full" />
           </span>
           <h2 className="font-display font-800 text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-[1.15] tracking-tight">
-            5.0 Out of 5 Stars — Loved by Velachery Parents
+            5.0 Out of 5 Stars — Loved by Chennai Parents
           </h2>
           <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed font-500">
             Read real, heartfelt stories from parents whose little ones are learning, speaking fluently,
-            and thriving at Kalai Kids.
+            and thriving at Kalai Kids across Velachery & Adambakkam.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-sm font-800 text-slate-800">
-                37 Google Reviews
+                45+ Google Reviews (2 Branches)
               </p>
               <span className="inline-block mt-2 text-xs font-700 text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
                 100% 5-Star Ratings
@@ -91,7 +91,7 @@ export default function Testimonials() {
             {/* Middle Rating Bars (5 cols) */}
             <div className="md:col-span-5 space-y-1.5">
               {[
-                { star: 5, pct: '100%', count: 37 },
+                { star: 5, pct: '100%', count: 45 },
                 { star: 4, pct: '0%', count: 0 },
                 { star: 3, pct: '0%', count: 0 },
                 { star: 2, pct: '0%', count: 0 },

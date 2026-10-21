@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Phone, Clock, Star, MapPin } from 'lucide-react';
-import { navLinks, schoolInfo } from '@/data/content';
+import { Menu, X, Phone, Clock, Star, MapPin, Building2 } from 'lucide-react';
+import { navLinks, schoolInfo, branches } from '@/data/content';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +42,7 @@ export default function Navbar() {
           : 'bg-white/90 backdrop-blur-sm py-3 border-b border-slate-100'
       }`}
     >
-      {/* Top Professional Info Bar (Pure Vector, No Emojis) */}
+      {/* Top Professional Info Bar */}
       <div className="section-container pb-2 mb-2 border-b border-slate-100/80">
         {/* Desktop View */}
         <div className="hidden lg:flex items-center justify-between gap-3 text-xs">
@@ -64,17 +64,21 @@ export default function Navbar() {
             </span>
           </div>
 
-          {/* Middle: Location badge */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-50 text-slate-700 font-700 border border-slate-200 shadow-xs">
-            <MapPin className="w-3.5 h-3.5 text-brand-500 flex-shrink-0" />
-            <span>Lakshmi Nagar 2nd Main Rd, Velachery</span>
-          </div>
+          {/* Middle: 2 Branches Badge */}
+          <button
+            type="button"
+            onClick={() => handleNavClick('#contact')}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-50 hover:bg-brand-100 text-brand-800 font-700 border border-brand-200/80 shadow-xs transition-colors"
+          >
+            <Building2 className="w-3.5 h-3.5 text-brand-600 flex-shrink-0" />
+            <span>2 Campuses: Velachery & Adambakkam</span>
+          </button>
 
           {/* Right: Rating badge & Direct Call */}
           <div className="flex items-center gap-2.5">
             <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-50 text-amber-900 font-700 border border-amber-200/80 shadow-xs">
               <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500 flex-shrink-0" />
-              <span>5.0 Rated by 37+ Parents</span>
+              <span>5.0 Rated (45+ Reviews)</span>
             </div>
 
             <a
@@ -98,10 +102,13 @@ export default function Navbar() {
             <span>Mon–Sat 8:30 AM – 7:30 PM</span>
           </div>
 
-          <div className="inline-flex items-center gap-1 text-slate-600 font-600 text-xs">
+          <button
+            onClick={() => handleNavClick('#contact')}
+            className="inline-flex items-center gap-1 text-slate-700 font-700 text-xs hover:text-brand-600"
+          >
             <MapPin className="w-3.5 h-3.5 text-brand-500" />
-            <span>Velachery, Chennai</span>
-          </div>
+            <span>Velachery & Adambakkam</span>
+          </button>
 
           <a
             href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
@@ -122,12 +129,15 @@ export default function Navbar() {
             />
             {isOpenNow ? 'Open Now' : 'Closed'} · 8:30 AM – 7:30 PM
           </span>
+          <span className="text-slate-600 font-700 text-[10px]">
+            Velachery · Adambakkam
+          </span>
           <a
             href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
-            className="inline-flex items-center gap-1 text-brand-600 font-700 bg-brand-50 px-2.5 py-0.5 rounded-full border border-brand-200"
+            className="inline-flex items-center gap-1 text-brand-600 font-700 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200"
           >
             <Phone className="w-3 h-3 text-brand-600" />
-            <span>Call School</span>
+            <span>Call</span>
           </a>
         </div>
       </div>
@@ -137,11 +147,11 @@ export default function Navbar() {
         <button
           onClick={() => handleNavClick('#home')}
           className="flex items-center gap-2 group text-left py-1"
-          aria-label="Kalai Kids Home Montessori School Home"
+          aria-label="Kalai Kids Preschool & Daycare Home"
         >
           <img
             src="/kalai_logo_clean.png"
-            alt="Kalai Kids Home Montessori School Velachery"
+            alt="Kalai Kids Preschool & Daycare Velachery and Adambakkam"
             className="h-9 sm:h-11 md:h-12 w-auto max-w-[190px] sm:max-w-[250px] md:max-w-[300px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
           />
         </button>
@@ -192,8 +202,20 @@ export default function Navbar() {
               />
               <span className="inline-flex items-center gap-1 text-xs font-700 text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/60">
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
-                5.0 (37 Reviews)
+                5.0 (45+ Reviews)
               </span>
+            </div>
+
+            {/* 2 Branches Notice in Mobile Menu */}
+            <div className="p-3 mb-3 bg-brand-50/70 rounded-2xl border border-brand-100 text-xs">
+              <p className="font-800 text-brand-900 mb-1 flex items-center gap-1.5">
+                <Building2 className="w-3.5 h-3.5 text-brand-600" />
+                <span>2 Campuses in Chennai</span>
+              </p>
+              <div className="flex flex-col gap-1 text-slate-600 font-600">
+                <span>• Branch 1: Lakshmi Nagar 2nd Main Rd, Velachery</span>
+                <span>• Branch 2: Ramkrishna Nagar 1st Main Rd, Adambakkam</span>
+              </div>
             </div>
 
             <ul className="flex flex-col gap-1">

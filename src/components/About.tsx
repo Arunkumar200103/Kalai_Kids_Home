@@ -56,9 +56,9 @@ export default function About() {
               >
                 <div className="bg-gradient-to-br from-amber-400 to-brand-500 rounded-2xl p-2.5 shadow-inner text-white">
                   <p className="font-display font-800 text-3xl leading-none">5.0 ★</p>
-                  <p className="text-[10px] font-700 uppercase tracking-wider mt-1">37 Reviews</p>
+                  <p className="text-[10px] font-700 uppercase tracking-wider mt-1">45+ Reviews</p>
                 </div>
-                <p className="text-[11px] font-700 text-slate-700 mt-2">Loved by Parents</p>
+                <p className="text-[11px] font-700 text-slate-700 mt-2">2 Campuses in Chennai</p>
               </div>
             </div>
           </div>

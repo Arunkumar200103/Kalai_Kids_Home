@@ -19,10 +19,10 @@ export default function VideoTour() {
             <span className="w-8 h-1 bg-brand-400 rounded-full" />
           </span>
           <h2 className="font-display font-700 text-3xl md:text-4xl text-slate-800 leading-tight">
-            A Glimpse into Kalai Kids Velachery
+            A Glimpse into Kalai Kids
           </h2>
           <p className="text-slate-600 mt-4 leading-relaxed">
-            Experience our vibrant campus, interactive classrooms, and the joyful environment where learning comes alive.
+            Experience our vibrant campuses, interactive classrooms, and the joyful environment where learning comes alive.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function VideoTour() {
               <Info className="w-4 h-4 text-brand-600" />
             </div>
             <p className="text-sm text-slate-700 font-500">
-              <span className="font-700 text-brand-700">Campus Note:</span> Parents are warmly invited to visit our campus at No. 11, Lakshmi Nagar 2nd Main Road, Velachery for a live walk-through and teacher interaction.
+              <span className="font-700 text-brand-700">Campus Note:</span> Parents are warmly invited to visit either of our campuses in <strong>Velachery</strong> (Lakshmi Nagar) or <strong>Adambakkam</strong> (Ramkrishna Nagar) for a live walk-through and teacher interaction.
             </p>
           </div>
         </div>

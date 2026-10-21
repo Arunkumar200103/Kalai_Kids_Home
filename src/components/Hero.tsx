@@ -18,10 +18,10 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-brand-200/70 shadow-xs w-fit">
             <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
             <span className="text-xs font-700 text-slate-700 uppercase tracking-wider">
-              Kalai Kids Velachery
+              Kalai Kids · 2 Campuses
             </span>
             <span className="w-1 h-1 rounded-full bg-slate-300" />
-            <span className="text-xs font-700 text-brand-600">Preschool & Daycare</span>
+            <span className="text-xs font-700 text-brand-600">Velachery & Adambakkam</span>
           </div>
 
           {/* Heading with elegant typography */}
@@ -33,8 +33,8 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-500 max-w-2xl">
-            A safe, caring, and joyful early learning home in Lakshmi Nagar, Velachery.
-            Through fun activities, storytelling, creative arts, and individual care from loving teachers,
+            A safe, caring, and joyful early learning home in <strong className="text-slate-800 font-700">Velachery</strong> and <strong className="text-slate-800 font-700">Adambakkam</strong>, Chennai.
+            Through fun activities, storytelling, creative arts, and individual care from loving mentors,
             we build a strong, happy foundation for your child's future.
           </p>
 
@@ -89,13 +89,29 @@ export default function Hero() {
                 ))}
               </div>
               <span className="text-xs sm:text-sm font-700 text-slate-800">
-                5.0 Rating <span className="text-slate-500 font-500">(37 Google Reviews)</span>
+                5.0 Rating <span className="text-slate-500 font-500">(45+ Reviews · 2 Branches)</span>
               </span>
             </div>
 
-            <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-600 font-600">
-              <MapPin className="w-4 h-4 text-brand-500 flex-shrink-0" />
-              <span>No. 11, Lakshmi Nagar 2nd Main Rd, Velachery</span>
+            <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-slate-600 font-600">
+              <a
+                href="https://maps.app.goo.gl/5ekzVdWxFbyvLuLv7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-brand-50 hover:text-brand-700 transition-colors"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-500 flex-shrink-0" />
+                <span>Velachery (Lakshmi Nagar)</span>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/iW7uWzVgLfrknykf9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-brand-50 hover:text-brand-700 transition-colors"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-500 flex-shrink-0" />
+                <span>Adambakkam (Ramkrishna Nagar)</span>
+              </a>
             </div>
           </div>
         </div>

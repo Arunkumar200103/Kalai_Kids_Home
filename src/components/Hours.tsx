@@ -40,8 +40,8 @@ export default function Hours() {
             Flexible Timings for Working Parents
           </h2>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Kalai Kids offers extended preschool and daycare hours from morning to evening,
-            providing a safe second home for your child in Velachery.
+            Kalai Kids offers extended preschool and daycare hours from morning to evening across both our
+            Velachery and Adambakkam campuses, providing a safe second home for your child.
           </p>
         </div>
 
@@ -158,7 +158,7 @@ export default function Hours() {
               <div className="mt-5 pt-4 border-t border-slate-100 flex items-start gap-2.5 text-xs text-slate-500">
                 <MapPin className="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5" />
                 <span>
-                  Located at No. 11, Lakshmi Nagar 2nd Main Road, Velachery. Parents are welcome to visit anytime during open hours!
+                  <strong>2 Campuses in Chennai:</strong> No. 11, Lakshmi Nagar 2nd Main Rd (Velachery) & No. 74, Ramkrishna Nagar 1st Main Rd (Adambakkam). Parents are welcome to visit anytime during open hours!
                 </span>
               </div>
             </div>

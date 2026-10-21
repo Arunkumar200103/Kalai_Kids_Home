@@ -1,5 +1,5 @@
-import { Phone, Mail, MapPin, Clock, Heart, ArrowUp, Star } from 'lucide-react';
-import { schoolInfo, navLinks, schoolHours } from '@/data/content';
+import { Phone, Mail, MapPin, Clock, Heart, ArrowUp, Star, Navigation, ExternalLink } from 'lucide-react';
+import { schoolInfo, navLinks, branches } from '@/data/content';
 
 export default function Footer() {
   const handleNavClick = (href: string) => {
@@ -21,20 +21,25 @@ export default function Footer() {
               <div className="bg-white rounded-2xl p-2.5 sm:p-3 inline-block shadow-md">
                 <img
                   src="/kalai_logo_clean.png"
-                  alt="Kalai Kids Home Montessori School Velachery"
+                  alt="Kalai Kids Preschool & Daycare Velachery and Adambakkam"
                   className="h-10 sm:h-12 w-auto max-w-[220px] sm:max-w-[260px] object-contain"
                 />
               </div>
             </div>
 
             <p className="text-sm text-slate-400 leading-relaxed mb-5 font-500">
-              Welcome to our Kids Preschool, a safe, caring, and joyful learning environment where
-              children learn, play, and grow with confidence in Lakshmi Nagar, Velachery.
+              Welcome to Kalai Kids Preschool & Daycare, a safe, caring, and joyful learning environment where
+              children learn, play, and grow with confidence across our Velachery and Adambakkam campuses.
             </p>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-xs font-700 text-amber-300 border border-white/10">
-              <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
-              <span>5.0 Star Rating (37 Reviews)</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-xs font-700 text-amber-300 border border-white/10">
+                <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
+                <span>5.0 Star Rating (45+ Reviews)</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-500/20 text-xs font-700 text-brand-300 border border-brand-500/30">
+                <span>2 Campuses in Chennai</span>
+              </div>
             </div>
           </div>
 
@@ -57,60 +62,98 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Programs (3 cols) */}
-          <div className="lg:col-span-3">
+          {/* Programs (2 cols) */}
+          <div className="lg:col-span-2">
             <h4 className="font-display font-800 text-white text-base mb-4 tracking-tight">
-              Programs Offered
+              Programs
             </h4>
-            <ul className="space-y-2.5 text-sm text-slate-400">
-              <li>• Playgroup (1.5 – 2.5 yrs)</li>
-              <li>• Pre-KG / Nursery (2.5 – 3.5 yrs)</li>
-              <li>• Junior KG / LKG (3.5 – 4.5 yrs)</li>
-              <li>• Senior KG / UKG (4.5 – 5.5 yrs)</li>
-              <li>• Extended Daycare (Till 7:30 PM)</li>
-              <li>• Basic Academics & Storytelling</li>
-              <li>• Art, Craft & Action Rhymes</li>
+            <ul className="space-y-2 text-sm text-slate-400">
+              <li>• Playgroup (1.5–2.5 yrs)</li>
+              <li>• Pre-KG (2.5–3.5 yrs)</li>
+              <li>• Junior KG (3.5–4.5 yrs)</li>
+              <li>• Senior KG (4.5–5.5 yrs)</li>
+              <li>• Daycare (Till 7:30 PM)</li>
+              <li>• Storytelling & Phonics</li>
+              <li>• Art & Movement</li>
             </ul>
           </div>
 
-          {/* Contact & Hours Column (3 cols) */}
-          <div className="lg:col-span-3">
+          {/* 2 Campuses & Contact (4 cols) */}
+          <div className="lg:col-span-4">
             <h4 className="font-display font-800 text-white text-base mb-4 tracking-tight">
-              Contact & Hours
+              Our 2 Chennai Campuses
             </h4>
-            <ul className="space-y-3 text-sm text-slate-400">
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-brand-400 flex-shrink-0 mt-1" />
-                <span className="leading-snug">{schoolInfo.address}</span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-brand-400 flex-shrink-0" />
-                <span>Mon – Sat: 8:30 AM – 7:30 PM</span>
-              </li>
-              <li>
-                <a
-                  href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
-                  className="flex items-center gap-2.5 text-white hover:text-brand-400 font-700 transition-colors"
-                >
+            
+            <div className="space-y-3.5 text-xs sm:text-sm">
+              {/* Branch 1 */}
+              <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div className="flex items-center justify-between gap-2 mb-1">
+                  <span className="font-800 text-brand-300 text-xs uppercase tracking-wider">
+                    Campus 1 · Velachery
+                  </span>
+                  <a
+                    href="https://maps.app.goo.gl/5ekzVdWxFbyvLuLv7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] text-amber-300 hover:text-amber-200 font-700"
+                  >
+                    <Navigation className="w-3 h-3" />
+                    <span>Map Link</span>
+                  </a>
+                </div>
+                <p className="text-slate-300 text-xs leading-relaxed">
+                  No. 11, Lakshmi Nagar 2nd Main Road, Velachery, Chennai 600042
+                </p>
+              </div>
+
+              {/* Branch 2 */}
+              <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div className="flex items-center justify-between gap-2 mb-1">
+                  <span className="font-800 text-brand-300 text-xs uppercase tracking-wider">
+                    Campus 2 · Adambakkam
+                  </span>
+                  <a
+                    href="https://maps.app.goo.gl/iW7uWzVgLfrknykf9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] text-amber-300 hover:text-amber-200 font-700"
+                  >
+                    <Navigation className="w-3 h-3" />
+                    <span>Map Link</span>
+                  </a>
+                </div>
+                <p className="text-slate-300 text-xs leading-relaxed">
+                  No. 74, Ramkrishna Nagar, 1st Main Rd, Adambakkam, Chennai 600088
+                </p>
+              </div>
+
+              {/* Working Hours & Phone */}
+              <div className="pt-2 flex flex-col gap-2">
+                <div className="flex items-center gap-2 text-slate-300 text-xs">
+                  <Clock className="w-4 h-4 text-brand-400 flex-shrink-0" />
+                  <span>Mon – Sat: 8:30 AM – 7:30 PM (Sunday Closed)</span>
+                </div>
+                <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-brand-400 flex-shrink-0" />
-                  {schoolInfo.phone}
-                </a>
-              </li>
-              <li>
-                <span className="text-xs text-slate-500 pl-6 block">
-                  Landline: {schoolInfo.altPhone}
-                </span>
-              </li>
-            </ul>
+                  <a
+                    href={`tel:${schoolInfo.phone.replace(/\s/g, '')}`}
+                    className="text-white hover:text-brand-400 font-800 text-sm transition-colors"
+                  >
+                    {schoolInfo.phone}
+                  </a>
+                  <span className="text-xs text-slate-500">| Landline: {schoolInfo.altPhone}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs sm:text-sm text-slate-400 flex items-center gap-1.5 font-500">
-            © {new Date().getFullYear()} Kalai Kids Velachery. Made with
+            © {new Date().getFullYear()} Kalai Kids Preschool & Daycare. Made with
             <Heart className="w-4 h-4 text-rose-500 fill-rose-500" />
-            for little learners in Velachery, Chennai
+            for little learners in Velachery & Adambakkam, Chennai
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

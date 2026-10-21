@@ -15,21 +15,85 @@ export interface SchoolHours {
   isOpenDay: boolean;
 }
 
+export interface Branch {
+  id: 'velachery' | 'adambakkam';
+  name: string;
+  shortName: string;
+  campusTitle: string;
+  tagline: string;
+  address: string;
+  shortAddress: string;
+  area: string;
+  city: string;
+  pincode: string;
+  phone: string;
+  altPhone?: string;
+  rating: number;
+  reviewCount: number;
+  mapUrl: string;
+  mapEmbed: string;
+  hours: string;
+  isMain?: boolean;
+}
+
+export const branches: Branch[] = [
+  {
+    id: 'velachery',
+    name: 'Kalai Kids — Velachery Branch',
+    shortName: 'Velachery Campus',
+    campusTitle: 'Velachery Campus (Branch 1)',
+    tagline: 'Near Phoenix Marketcity & Dhandeeswaram',
+    address: 'No. 11, Lakshmi Nagar 2nd Main Road, Velachery, Chennai, Tamil Nadu 600042',
+    shortAddress: 'No. 11, Lakshmi Nagar 2nd Main Road, Velachery',
+    area: 'Lakshmi Nagar, Velachery',
+    city: 'Chennai',
+    pincode: '600042',
+    phone: '+91 90437 55433',
+    altPhone: '044 2259 1470',
+    rating: 5.0,
+    reviewCount: 37,
+    mapUrl: 'https://maps.app.goo.gl/5ekzVdWxFbyvLuLv7',
+    mapEmbed: 'https://maps.google.com/maps?q=Kalai+Kids+11+Lakshmi+Nagar+2nd+Main+Road+Velachery+Chennai+600042&output=embed',
+    hours: 'Mon – Sat: 8:30 AM – 7:30 PM',
+    isMain: true,
+  },
+  {
+    id: 'adambakkam',
+    name: 'Kalai Kids — Adambakkam Branch',
+    shortName: 'Adambakkam Campus',
+    campusTitle: 'Adambakkam Campus (Branch 2)',
+    tagline: 'Near St. Thomas Mount / Guindy & City Links',
+    address: 'No. 74, Ramkrishna Nagar, 1st Main Rd, Adambakkam, Chennai, Tamil Nadu 600088',
+    shortAddress: 'No. 74, Ramkrishna Nagar, 1st Main Rd, Adambakkam',
+    area: 'Ramkrishna Nagar, Adambakkam',
+    city: 'Chennai',
+    pincode: '600088',
+    phone: '+91 90437 55433',
+    rating: 5.0,
+    reviewCount: 8,
+    mapUrl: 'https://maps.app.goo.gl/iW7uWzVgLfrknykf9',
+    mapEmbed: 'https://maps.google.com/maps?q=Kalai+Kids+74+Ramkrishna+Nagar+1st+Main+Rd+Adambakkam+Chennai+600088&output=embed',
+    hours: 'Mon – Sat: 8:30 AM – 7:30 PM',
+    isMain: false,
+  },
+];
+
 export const schoolInfo = {
-  name: 'Kalai Kids Velachery',
+  name: 'Kalai Kids Preschool & Daycare',
   shortName: 'Kalai Kids',
   tagline: 'Where Children Learn, Play & Grow with Confidence',
   established: 2014,
-  address: 'NO 11 LAKSHMI NAGAR 2ND MAIN ROAD, Velachery Chennai 600042, Chennai, Tamil Nadu 600042, India',
-  area: 'Lakshmi Nagar, Velachery',
+  branchesCount: 2,
+  locationsText: 'Velachery & Adambakkam, Chennai',
+  address: 'Branch 1: No. 11, Lakshmi Nagar 2nd Main Rd, Velachery | Branch 2: No. 74, Ramkrishna Nagar 1st Main Rd, Adambakkam',
+  area: 'Velachery & Adambakkam',
   city: 'Chennai',
-  pincode: '600042',
   phone: '+91 90437 55433',
   altPhone: '044 2259 1470',
   email: 'kalaikidsvelachery@gmail.com',
   rating: 5.0,
-  reviewCount: 37,
-  mapUrl: 'https://www.google.com/maps/search/?api=1&query=Kalai+Kids+NO+11+LAKSHMI+NAGAR+2ND+MAIN+ROAD+Velachery+Chennai+600042',
+  reviewCount: 45, // 37 in Velachery + 8 in Adambakkam
+  mapUrl: 'https://maps.app.goo.gl/5ekzVdWxFbyvLuLv7',
   mapEmbed: 'https://maps.google.com/maps?q=Kalai+Kids+11+Lakshmi+Nagar+2nd+Main+Road+Velachery+Chennai+600042&output=embed',
   operatingHoursText: 'Monday – Saturday: 8:30 AM – 7:30 PM (Sunday: Closed)',
 };
@@ -45,9 +109,10 @@ export const schoolHours: SchoolHours[] = [
 ];
 
 export const aboutContent = {
-  title: 'Welcome to Kalai Kids Velachery',
+  title: 'Welcome to Kalai Kids Preschool & Daycare',
+  subheading: '2 Campuses in Chennai: Lakshmi Nagar (Velachery) & Ramkrishna Nagar (Adambakkam)',
   mainDescription:
-    'Welcome to our Kids Preschool, a safe, caring, and joyful learning environment where children learn, play, and grow with confidence. We focus on early childhood education through fun and engaging activities, including basic academics, storytelling, art and craft, music, games, communication skills, and social development. Our experienced teachers provide individual attention and encourage creativity, curiosity, and good habits. We aim to build a strong foundation for your child’s future in a friendly and nurturing atmosphere. Enroll your little one today and give them a happy start to their learning journey!',
+    'Welcome to Kalai Kids Preschool & Daycare, a safe, caring, and joyful learning environment where children learn, play, and grow with confidence across our Velachery and Adambakkam campuses. We focus on early childhood education through fun and engaging activities, including basic academics, storytelling, art and craft, music, games, communication skills, and social development. Our experienced teachers provide individual attention and encourage creativity, curiosity, and good habits. We aim to build a strong foundation for your child’s future in a friendly and nurturing atmosphere. Enroll your little one today and give them a happy start to their learning journey!',
   highlights: [
     'Basic academics & school readiness',
     'Storytelling & Tamil & English language fluency',
@@ -156,14 +221,14 @@ export const features = [
     icon: 'Clock',
     title: 'Extended Working Hours (8:30 AM – 7:30 PM)',
     description:
-      'Convenient full-day and extended daycare timings Monday through Saturday, giving complete peace of mind to working parents in Velachery.',
+      'Convenient full-day and extended daycare timings Monday through Saturday, giving complete peace of mind to working parents across Velachery and Adambakkam.',
     color: 'sunshine',
   },
   {
     icon: 'ShieldCheck',
-    title: 'Safe, Disciplined & Caring Campus',
+    title: 'Safe, Disciplined & Caring Campuses',
     description:
-      'A secure, hygienic, and child-safe environment in Lakshmi Nagar where children learn good habits, table manners, and self-reliance.',
+      'Secure, hygienic, and child-safe environments in Velachery (Lakshmi Nagar) and Adambakkam (Ramkrishna Nagar) where children learn good habits, table manners, and self-reliance.',
     color: 'ocean',
   },
   {
@@ -507,10 +572,10 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const stats = [
-  { value: '5.0 ★', label: 'Google Rating (37 Reviews)', sub: '100% 5-Star Reviews' },
-  { value: '8:30–7:30', label: 'Extended Hours (Mon–Sat)', sub: 'Daycare Support' },
-  { value: '100%', label: 'Individual Attention', sub: 'Uma Ma’am & Dedicated Team' },
-  { value: '10+', label: 'Years of Excellence', sub: 'In Lakshmi Nagar, Velachery' },
+  { value: '5.0 ★', label: 'Google Rating (45+ Reviews)', sub: 'Velachery & Adambakkam' },
+  { value: '2 Campuses', label: 'Velachery & Adambakkam', sub: 'Easy Neighborhood Access' },
+  { value: '8:30–7:30', label: 'Extended Hours (Mon–Sat)', sub: 'Full Day & Daycare Support' },
+  { value: '10+', label: 'Years of Excellence', sub: 'Montessori Early Childhood' },
 ];
 
 export const navLinks = [
