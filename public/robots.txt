@@ -1,0 +1,9 @@
+# Robots.txt for Kalai Kids Preschool & Daycare
+User-agent: *
+Allow: /
+
+# Disallow private/admin endpoints if any
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://kalaikidshome.com/sitemap.xml

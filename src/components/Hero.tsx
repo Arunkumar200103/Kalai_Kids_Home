@@ -27,6 +27,7 @@ export default function Hero() {
           {/* Heading with elegant typography */}
           <div>
             <h1 className="font-display font-800 text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.12] tracking-tight">
+              <span className="sr-only">Kalai Kids Home — Preschool & Daycare in Velachery & Adambakkam, Chennai. </span>
               Where Children <span className="gradient-text">Learn, Play & Grow</span> with Confidence
             </h1>
           </div>
