@@ -37,12 +37,17 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-slate-900/5 py-2 sm:py-2.5 border-b border-brand-100/50'
-          : 'bg-white/90 backdrop-blur-sm py-2.5 sm:py-3 border-b border-slate-100'
+          ? 'bg-white/95 backdrop-blur-md shadow-md shadow-slate-900/5 py-1.5 sm:py-2 border-b border-slate-200/80'
+          : 'bg-white/95 backdrop-blur-sm py-2 sm:py-2.5 border-b border-slate-100'
         }`}
     >
-      {/* Top Professional Info Bar */}
-      <div className="section-container pb-2 mb-2 border-b border-slate-100/80">
+      {/* Top Professional Info Bar (Hides smoothly on scroll to save screen space) */}
+      <div
+        className={`section-container transition-all duration-300 ease-in-out overflow-hidden ${scrolled
+            ? 'max-h-0 opacity-0 -translate-y-2 pointer-events-none pb-0 mb-0 border-b-0 border-transparent'
+            : 'max-h-20 opacity-100 translate-y-0 pb-2 mb-2 border-b border-slate-100/80'
+          }`}
+      >
         {/* Desktop View (>= 1024px) */}
         <div className="hidden lg:flex items-center justify-between gap-3 text-xs">
           {/* Left: Operating Hours with glowing indicator */}
@@ -151,7 +156,10 @@ export default function Navbar() {
           <img
             src="/kalai_logo_clean.png"
             alt="Kalai Kids — Velachery and Adambakkam"
-            className="h-[52px] sm:h-[64px] md:h-[72px] lg:h-[80px] w-auto max-w-[165px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-[320px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
+            className={`w-auto object-contain transition-all duration-300 drop-shadow-xs group-hover:scale-[1.02] ${scrolled
+                ? 'h-[44px] sm:h-[50px] md:h-[56px] lg:h-[62px] max-w-[140px] sm:max-w-[180px] md:max-w-[220px] lg:max-w-[260px]'
+                : 'h-[52px] sm:h-[64px] md:h-[72px] lg:h-[80px] max-w-[165px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-[320px]'
+              }`}
           />
         </button>
 
