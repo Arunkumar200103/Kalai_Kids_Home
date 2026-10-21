@@ -3,7 +3,7 @@ import { schoolInfo, heroImages, stats } from '@/data/content';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex flex-col justify-center pt-32 sm:pt-36 pb-36 lg:pb-24 overflow-hidden bg-gradient-to-b from-brand-50/30 via-white to-slate-50/50">
+    <section id="home" className="relative min-h-screen flex flex-col justify-center pt-36 sm:pt-40 lg:pt-48 pb-36 lg:pb-24 overflow-hidden bg-gradient-to-b from-brand-50/30 via-white to-slate-50/50">
       {/* Refined ambient background glowing orbs */}
       <div className="absolute top-[-5%] left-[-5%] w-[55%] h-[55%] bg-gradient-to-br from-amber-200/30 via-brand-200/20 to-rose-200/20 blur-[130px] rounded-full animate-spin-slow pointer-events-none" />
       <div

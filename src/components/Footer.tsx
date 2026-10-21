@@ -22,7 +22,7 @@ export default function Footer() {
                                 <img
                                     src="/kalai_logo_clean.png"
                                     alt="Kalai Kids — Velachery and Adambakkam"
-                                    className="h-10 sm:h-12 w-auto max-w-[220px] sm:max-w-[260px] object-contain"
+                                    className="h-14 sm:h-16 w-auto max-w-[260px] sm:max-w-[300px] object-contain"
                                 />
                             </div>
                         </div>

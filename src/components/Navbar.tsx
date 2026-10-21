@@ -151,7 +151,7 @@ export default function Navbar() {
           <img
             src="/kalai_logo_clean.png"
             alt="Kalai Kids — Velachery and Adambakkam"
-            className="h-9 sm:h-11 md:h-12 w-auto max-w-[170px] sm:max-w-[250px] md:max-w-[300px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
+            className="h-[52px] sm:h-[64px] md:h-[72px] lg:h-[80px] w-auto max-w-[165px] sm:max-w-[220px] md:max-w-[280px] lg:max-w-[320px] object-contain group-hover:scale-[1.02] transition-transform duration-300 drop-shadow-xs"
           />
         </button>
 
@@ -215,7 +215,7 @@ export default function Navbar() {
               <img
                 src="/kalai_logo_clean.png"
                 alt="Kalai Kids"
-                className="h-8 w-auto object-contain"
+                className="h-11 sm:h-12 w-auto object-contain"
               />
               <span className="inline-flex items-center gap-1 text-xs font-700 text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200/60">
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
