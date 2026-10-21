@@ -4,6 +4,7 @@ import { schoolInfo, branches } from '@/data/content';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { WhatsAppIcon } from '@/components/FloatingWhatsApp';
 
+
 const programsList = [
   'Playgroup (1.5 – 2.5 yrs)',
   'Pre-KG / Nursery (2.5 – 3.5 yrs)',
@@ -486,8 +487,8 @@ export default function Contact() {
                     type="submit"
                     className="w-full flex items-center justify-center gap-2.5 py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 via-[#25D366] to-emerald-600 hover:from-emerald-600 hover:to-green-700 text-white font-800 text-base shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
                   >
-                    <WhatsAppIcon className="w-5 h-5 fill-white text-white flex-shrink-0" />
-                    <span>Submit Enquiry & Send via WhatsApp</span>
+
+                    <span>Submit Enquiry</span>
                     <Send className="w-4 h-4 ml-1" />
                   </button>
 

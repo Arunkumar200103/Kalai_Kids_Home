@@ -126,7 +126,7 @@ export const aboutContent = {
     ],
     quote:
         'Our experienced teachers provide individual attention and encourage creativity, curiosity, and good habits. We aim to build a strong foundation for your child’s future in a friendly and nurturing atmosphere.',
-    teachersMentioned: 'Dedicated Mentors: Uma Ma’am, Kalai Ma’am & Compassionate Faculty',
+    teachersMentioned: 'Dedicated Mentors: Uma Ma’am & Compassionate Faculty',
 };
 
 export const heroImages = {
@@ -208,7 +208,7 @@ export const features = [
         icon: 'HeartHandshake',
         title: 'Individual Attention & Loving Mentors',
         description:
-            'Beloved teachers like Uma Ma’am and Kalai Ma’am give personal care and patience to each child, ensuring no little one feels left behind.',
+            'Beloved teachers like Uma Ma’am give personal care and patience to each child, ensuring no little one feels left behind.',
         color: 'rose',
     },
     {
@@ -376,7 +376,7 @@ export const testimonials: Testimonial[] = [
         timeAgo: '6 months ago',
         rating: 5,
         tag: 'Speech & Development',
-        text: 'I’m very happy with my son’s (Adhvik.R) experience at Kalai Kids School. It provides a disciplined and nurturing environment, and I’ve seen a great improvement in his speech and overall development. The teachers are caring and give individual attention to every child. Special thanks to Uma Ma’am, Kalai Ma’am, and all the teaching and non-teaching staff for their support and dedication. Highly recommended for a strong early foundation!',
+        text: 'I’m very happy with my son’s (Adhvik.R) experience at Kalai Kids School. It provides a disciplined and nurturing environment, and I’ve seen a great improvement in his speech and overall development. The teachers are caring and give individual attention to every child. Special thanks to Uma Ma’am and all the teaching and non-teaching staff for their support and dedication. Highly recommended for a strong early foundation!',
         initials: 'DJ',
     },
     {
