@@ -1,4 +1,4 @@
-import { CheckCircle2, Heart, Sparkles, BookOpen, Music, Palette, Trophy, Users } from 'lucide-react';
+import { CheckCircle2, Heart, Sparkles, BookOpen, Music, Palette, Trophy, Users, Star } from 'lucide-react';
 import { aboutImages, aboutContent, schoolInfo } from '@/data/content';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
@@ -55,7 +55,10 @@ export default function About() {
                                 style={{ animationDelay: '1s' }}
                             >
                                 <div className="bg-gradient-to-br from-amber-400 to-brand-500 rounded-2xl p-2.5 shadow-inner text-white">
-                                    <p className="font-display font-800 text-3xl leading-none">5.0 ★</p>
+                                    <p className="font-display font-800 text-3xl leading-none flex items-center justify-center gap-1">
+                                        <span>5.0</span>
+                                        <Star className="w-5 h-5 fill-white text-white" />
+                                    </p>
                                     <p className="text-[10px] font-700 uppercase tracking-wider mt-1">45+ Reviews</p>
                                 </div>
                                 <p className="text-[11px] font-700 text-slate-700 mt-2">2 Campuses in Chennai</p>

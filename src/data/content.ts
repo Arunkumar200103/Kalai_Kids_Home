@@ -575,7 +575,7 @@ export const testimonials: Testimonial[] = [
         timeAgo: '6 months ago',
         rating: 5,
         tag: 'Loving Care',
-        text: 'We are very happy with our Kalai kids school. The Teachers are kind, caring and give good attention to every child. My kid Venbha enjoys going to school every day.💝 Thank you to all teachers and special thanks to Uma mam for taking such a wonderful care of my child.',
+        text: 'We are very happy with our Kalai kids school. The Teachers are kind, caring and give good attention to every child. My kid Venbha enjoys going to school every day. Thank you to all teachers and special thanks to Uma mam for taking such a wonderful care of my child.',
         initials: 'PL',
     },
     {
@@ -586,7 +586,7 @@ export const testimonials: Testimonial[] = [
         timeAgo: '10 months ago',
         rating: 5,
         tag: 'Language Fluency',
-        text: 'I\'m extremely happy with Kalai Kids School! My daughter Urvi is in pre-kg and has picked up Tamil language so quickly. She\'s speaking fluently and doing great academically. The school is doing a fantastic job! Highly recommend 👍',
+        text: 'I\'m extremely happy with Kalai Kids School! My daughter Urvi is in pre-kg and has picked up Tamil language so quickly. She\'s speaking fluently and doing great academically. The school is doing a fantastic job! Highly recommend.',
         initials: 'SP',
     },
     {
@@ -709,7 +709,7 @@ export const testimonials: Testimonial[] = [
         timeAgo: '1 year ago',
         rating: 5,
         tag: 'Kind Teachers',
-        text: 'A better environment of the children\'s development in studies. Teachers are very kind to children. Kalai kids is the best school for your children\'s 😊',
+        text: 'A better environment of the children\'s development in studies. Teachers are very kind to children. Kalai kids is the best school for your children\'s growth.',
         initials: 'SX',
     },
     {
@@ -745,13 +745,13 @@ export const testimonials: Testimonial[] = [
         timeAgo: '6 months ago',
         rating: 5,
         tag: 'Excellent Efforts',
-        text: 'Really excellent 👍 efforts 👍',
+        text: 'Really excellent efforts.',
         initials: 'SV',
     },
 ];
 
 export const stats = [
-    { value: '5.0 ★', label: 'Google Rating (45+ Reviews)', sub: 'Velachery & Adambakkam' },
+    { value: '5.0', label: 'Google Rating (45+ Reviews)', sub: 'Velachery & Adambakkam' },
     { value: '2 Campuses', label: 'Velachery & Adambakkam', sub: 'Easy Neighborhood Access' },
     { value: '8:30–7:30', label: 'Extended Hours (Mon–Sat)', sub: 'Full Day & Daycare Support' },
     { value: '10+', label: 'Years of Excellence', sub: 'Montessori Early Childhood' },

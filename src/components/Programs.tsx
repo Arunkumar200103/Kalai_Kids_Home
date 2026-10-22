@@ -130,46 +130,50 @@ export default function Programs() {
             <button
               type="button"
               onClick={() => setActiveTab('all')}
-              className={`px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
                 activeTab === 'all'
                   ? 'bg-brand-500 text-white shadow-md shadow-brand-500/25 scale-[1.02]'
                   : 'text-slate-600 hover:text-brand-600 hover:bg-white/80'
               }`}
             >
-              All Offerings
+              <Sparkles className="w-4 h-4" />
+              <span>All Offerings</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab('preschool')}
-              className={`px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
                 activeTab === 'preschool'
                   ? 'bg-brand-500 text-white shadow-md shadow-brand-500/25 scale-[1.02]'
                   : 'text-slate-600 hover:text-brand-600 hover:bg-white/80'
               }`}
             >
-              👶 Age Groups (2 – 6 yrs)
+              <Baby className="w-4 h-4" />
+              <span>Age Groups (2 – 6 yrs)</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab('afterschool')}
-              className={`px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
                 activeTab === 'afterschool'
                   ? 'bg-brand-500 text-white shadow-md shadow-brand-500/25 scale-[1.02]'
                   : 'text-slate-600 hover:text-brand-600 hover:bg-white/80'
               }`}
             >
-              🎨 After School (9 Classes)
+              <Palette className="w-4 h-4" />
+              <span>After School (9 Classes)</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab('special')}
-              className={`px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
+              className={`inline-flex items-center gap-2 px-4 sm:px-5 py-2 rounded-xl sm:rounded-full text-xs sm:text-sm font-700 transition-all ${
                 activeTab === 'special'
                   ? 'bg-brand-500 text-white shadow-md shadow-brand-500/25 scale-[1.02]'
                   : 'text-slate-600 hover:text-brand-600 hover:bg-white/80'
               }`}
             >
-              👩‍🏫 Teacher Training (For Ladies)
+              <GraduationCap className="w-4 h-4" />
+              <span>Teacher Training (For Ladies)</span>
             </button>
           </div>
         </div>

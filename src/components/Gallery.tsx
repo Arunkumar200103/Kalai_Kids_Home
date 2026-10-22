@@ -10,6 +10,7 @@ import {
     Quote,
     CheckCircle2,
     Info,
+    Star,
 } from 'lucide-react';
 import { galleryImages, GalleryItem } from '@/data/content';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
@@ -208,7 +209,8 @@ export default function Gallery() {
                                             <span>Featured Event</span>
                                         </span>
                                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-amber-300 text-[11px] font-700 border border-white/20">
-                                            ★ 9th Annual Day Celebration
+                                            <Star className="w-3 h-3 fill-amber-300 text-amber-300" />
+                                            <span>9th Annual Day Celebration</span>
                                         </span>
                                     </div>
 

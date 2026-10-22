@@ -180,8 +180,9 @@ export default function Hero() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-4 divide-x divide-slate-200/60">
             {stats.map((stat, i) => (
               <div key={i} className="text-center px-2 sm:px-4">
-                <p className="font-display font-800 text-2xl sm:text-3xl text-slate-900 mb-0.5">
-                  {stat.value}
+                <p className="font-display font-800 text-2xl sm:text-3xl text-slate-900 mb-0.5 inline-flex items-center justify-center gap-1">
+                  <span>{stat.value}</span>
+                  {i === 0 && <Star className="w-5 h-5 sm:w-6 sm:h-6 fill-amber-400 text-amber-400" />}
                 </p>
                 <p className="text-xs sm:text-sm text-slate-800 font-700 tracking-tight leading-snug">
                   {stat.label}
