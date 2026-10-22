@@ -150,11 +150,21 @@ export const aboutImages = {
     play: playAreaImg,
 };
 
-export const programs = [
+export interface ProgramItem {
+    id: string;
+    name: string;
+    ageRange: string;
+    icon: string;
+    color: 'rose' | 'brand' | 'ocean' | 'mint' | 'sunshine';
+    description: string;
+    highlights: string[];
+}
+
+export const programs: ProgramItem[] = [
     {
         id: 'playgroup',
-        name: 'Playgroup',
-        ageRange: '1.5 – 2.5 Years',
+        name: 'Play Group',
+        ageRange: '2 – 3 Years',
         icon: 'Baby',
         color: 'rose',
         description:
@@ -163,8 +173,8 @@ export const programs = [
     },
     {
         id: 'pre-kg',
-        name: 'Pre-KG / Nursery',
-        ageRange: '2.5 – 3.5 Years',
+        name: 'Pre KG',
+        ageRange: '3 – 4 Years',
         icon: 'Palette',
         color: 'brand',
         description:
@@ -173,8 +183,8 @@ export const programs = [
     },
     {
         id: 'junior-kg',
-        name: 'Junior KG (LKG)',
-        ageRange: '3.5 – 4.5 Years',
+        name: 'Junior KG',
+        ageRange: '4 – 5 Years',
         icon: 'BookOpen',
         color: 'ocean',
         description:
@@ -183,8 +193,8 @@ export const programs = [
     },
     {
         id: 'senior-kg',
-        name: 'Senior KG (UKG)',
-        ageRange: '4.5 – 5.5 Years',
+        name: 'Senior KG',
+        ageRange: '5 – 6 Years',
         icon: 'GraduationCap',
         color: 'mint',
         description:
@@ -194,7 +204,7 @@ export const programs = [
     {
         id: 'daycare',
         name: 'Extended Daycare & Crèche',
-        ageRange: '1.5 – 8 Years',
+        ageRange: 'All Ages / Till 7:30 PM',
         icon: 'HeartHandshake',
         color: 'sunshine',
         description:
@@ -202,6 +212,174 @@ export const programs = [
         highlights: ['Open till 7:30 PM (Mon–Sat)', 'Safe & hygienic resting zone', 'Homework assistance', 'Engaging evening playtime'],
     },
 ];
+
+export interface AfterSchoolClass {
+    id: string;
+    title: string;
+    category: string;
+    icon: string;
+    badge: string;
+    description: string;
+    highlights: string[];
+    color: 'brand' | 'ocean' | 'rose' | 'mint' | 'sunshine';
+}
+
+export const afterSchoolClasses: AfterSchoolClass[] = [
+    {
+        id: 'tuition',
+        title: 'Tuition',
+        category: 'School Academics',
+        icon: 'BookOpen',
+        badge: 'All Subjects',
+        description:
+            'Comprehensive academic support with individual attention, syllabus reinforcement, doubt clearing, and daily homework guidance.',
+        highlights: ['Daily homework guidance', 'Concept clarity in all subjects', 'Regular assessment & test practice', 'Individual tutor attention'],
+        color: 'brand',
+    },
+    {
+        id: 'hindi',
+        title: 'Hindi',
+        category: 'Language Skills',
+        icon: 'Languages',
+        badge: 'Spoken & Written',
+        description:
+            'Interactive conversational and written Hindi lessons covering alphabet (Varnamala), vocabulary, reading, and school curriculum alignment.',
+        highlights: ['Conversational speaking practice', 'Reading & writing fundamentals', 'Interactive stories & games', 'School syllabus support'],
+        color: 'ocean',
+    },
+    {
+        id: 'phonics',
+        title: 'Phonics',
+        category: 'Reading Fluency',
+        icon: 'Sparkles',
+        badge: 'Reading Mastery',
+        description:
+            'Structured synthetic phonics empowering children to sound out words, blend sounds accurately, and read English books with speed and confidence.',
+        highlights: ['42 Letter sounds & blending', 'Tricky words & pronunciation', 'Spelling accuracy rules', 'Independent book reading'],
+        color: 'rose',
+    },
+    {
+        id: 'abacus',
+        title: 'Abacus',
+        category: 'Brain & Mental Math',
+        icon: 'Calculator',
+        badge: 'Speed & Focus',
+        description:
+            'Proven bead manipulation training that activates both brain hemispheres, supercharges mental math speed, memory, and concentration.',
+        highlights: ['Lightning mental calculations', 'Sharp focus & concentration', 'Photographic memory training', 'Builds math confidence'],
+        color: 'sunshine',
+    },
+    {
+        id: 'vedic-math',
+        title: 'Vedic Math',
+        category: 'Speed Arithmetic',
+        icon: 'Brain',
+        badge: 'Math Shortcuts',
+        description:
+            'Ancient Indian calculation shortcuts and mental formulas enabling students to solve complex math problems in seconds without paper.',
+        highlights: ['High-speed mental arithmetic', '16 Ancient Vedic sutras', 'Cross-checking shortcuts', 'Competitive exam foundation'],
+        color: 'mint',
+    },
+    {
+        id: 'handwriting',
+        title: 'Handwriting',
+        category: 'Penmanship & Grip',
+        icon: 'PenTool',
+        badge: 'Print & Cursive',
+        description:
+            'Specialized penmanship coaching focusing on correct pencil grip, posture, uniform letter sizing, neatness, and writing speed.',
+        highlights: ['Proper pencil grip correction', 'Print & cursive styles', 'Letter sizing & spacing', 'Speed with neat presentation'],
+        color: 'ocean',
+    },
+    {
+        id: 'drawing',
+        title: 'Drawing & Painting',
+        category: 'Creative Arts',
+        icon: 'Palette',
+        badge: 'Visual Arts',
+        description:
+            'Nurturing imagination through sketching fundamentals, color blending, oil pastels, water colors, cartooning, and creative artwork.',
+        highlights: ['Basic shapes to detailed sketches', 'Color theory & blending', 'Freehand cartooning & art', 'Creativity & expression'],
+        color: 'rose',
+    },
+    {
+        id: 'classical-dance',
+        title: 'Classical Dance',
+        category: 'Performing Arts',
+        icon: 'Sparkles',
+        badge: 'Bharatanatyam',
+        description:
+            'Graceful Bharatanatyam training covering fundamental adavus, mudras (hand gestures), rhythmic taalam, expressions (bhavas), and stage poise.',
+        highlights: ['Traditional adavus & mudras', 'Rhythm & footwork coordination', 'Body flexibility & grace', 'Stage performance poise'],
+        color: 'brand',
+    },
+    {
+        id: 'carnatic-music',
+        title: 'Carnatic Music',
+        category: 'Traditional Vocal',
+        icon: 'Music',
+        badge: 'Vocal Heritage',
+        description:
+            'Authentic South Indian classical vocal coaching covering swaras, sarali varisai, janta varisai, devotional slokas, and voice culture.',
+        highlights: ['Sarali & janta varisai basics', 'Devotional bhajans & slokas', 'Shruti & rhythm alignment', 'Vocal pitch & confidence'],
+        color: 'sunshine',
+    },
+];
+
+export interface SpecialCourse {
+    id: string;
+    title: string;
+    tag: string;
+    subtitle: string;
+    targetAudience: string;
+    batchInfo: string;
+    description: string;
+    highlights: { title: string; desc: string }[];
+    careerOutcomes: string[];
+}
+
+export const specialCourse: SpecialCourse = {
+    id: 'montessori-teacher-training',
+    title: 'Montessori Teacher Training for Ladies',
+    tag: 'Special Course for Women',
+    subtitle: 'Professional Certification & Career Empowerment Program',
+    targetAudience: 'Exclusively for Ladies, Homemakers & Aspiring Educators',
+    batchInfo: 'Flexible Weekday & Weekend Batches Available',
+    description:
+        'A comprehensive, career-oriented professional training program that equips women with pedagogical mastery, authentic Montessori apparatus expertise, and child psychology. Designed to empower ladies with rewarding teaching careers in premier preschools or the expertise to start their own preschool center.',
+    highlights: [
+        {
+            title: 'Hands-on Montessori Apparatus',
+            desc: 'Practical, guided training with sensorial, mathematical, language, and practical life materials.',
+        },
+        {
+            title: 'Child Psychology & Milestones',
+            desc: 'In-depth understanding of toddler and early childhood emotional, cognitive, and social development.',
+        },
+        {
+            title: 'Flexible Batches for Ladies',
+            desc: 'Convenient weekday morning and weekend options tailored for homemakers and working women.',
+        },
+        {
+            title: 'Classroom & Curriculum Management',
+            desc: 'Lesson planning, phonics methodology, rhyme circles, and joyful classroom management techniques.',
+        },
+        {
+            title: 'Recognized Career Certification',
+            desc: 'Professional credentials qualifying graduates for lucrative teaching positions in reputed schools.',
+        },
+        {
+            title: 'Preschool Entrepreneurship Support',
+            desc: 'Expert guidance on syllabus design, center layout, and mentorship for starting your own preschool.',
+        },
+    ],
+    careerOutcomes: [
+        'Certified Montessori Directress / Teacher',
+        'Preschool & Nursery Center Head',
+        'Early Childhood Curriculum Specialist',
+        'Preschool & Daycare Entrepreneur',
+    ],
+};
 
 export const features = [
     {

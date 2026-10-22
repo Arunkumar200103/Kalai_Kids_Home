@@ -6,11 +6,21 @@ import { WhatsAppIcon } from '@/components/FloatingWhatsApp';
 
 
 const programsList = [
-  'Playgroup (1.5 – 2.5 yrs)',
-  'Pre-KG / Nursery (2.5 – 3.5 yrs)',
-  'Junior KG (3.5 – 4.5 yrs)',
-  'Senior KG (4.5 – 5.5 yrs)',
+  'Play Group (2 – 3 years)',
+  'Pre KG (3 – 4 years)',
+  'Junior KG (4 – 5 years)',
+  'Senior KG (5 – 6 years)',
   'Extended Daycare & Crèche (Till 7:30 PM)',
+  'After School: Tuition (All Subjects)',
+  'After School: Hindi (Spoken & Written)',
+  'After School: Phonics',
+  'After School: Abacus (Mental Math)',
+  'After School: Vedic Math',
+  'After School: Handwriting Improvement',
+  'After School: Drawing & Painting',
+  'After School: Classical Dance (Bharatanatyam)',
+  'After School: Carnatic Music',
+  'Special Course: Montessori Teacher Training for Ladies',
 ];
 
 export default function Contact() {
@@ -405,7 +415,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <label className="block text-xs font-700 text-slate-700 uppercase tracking-wider mb-1.5">
-                        Child’s Name & Age <span className="text-rose-500">*</span>
+                        Child’s Name & Age / Candidate Name <span className="text-rose-500">*</span>
                       </label>
                       <input
                         type="text"
@@ -413,7 +423,7 @@ export default function Contact() {
                         required
                         value={form.childName}
                         onChange={handleChange}
-                        placeholder="e.g. Adhvik, 2.5 yrs"
+                        placeholder="e.g. Adhvik, 3 yrs (or Candidate Name)"
                         className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none transition-all text-sm font-500"
                       />
                     </div>

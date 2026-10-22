@@ -62,24 +62,45 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Programs (2 cols) */}
-                    <div className="lg:col-span-2">
+                    {/* Programs & Offerings (3 cols) */}
+                    <div className="lg:col-span-3">
                         <h4 className="font-display font-800 text-white text-base mb-4 tracking-tight">
-                            Programs
+                            Programs & Courses
                         </h4>
-                        <ul className="space-y-2 text-sm text-slate-400">
-                            <li>• Playgroup (1.5–2.5 yrs)</li>
-                            <li>• Pre-KG (2.5–3.5 yrs)</li>
-                            <li>• Junior KG (3.5–4.5 yrs)</li>
-                            <li>• Senior KG (4.5–5.5 yrs)</li>
-                            <li>• Daycare (Till 7:30 PM)</li>
-                            <li>• Storytelling & Phonics</li>
-                            <li>• Art & Movement</li>
-                        </ul>
+                        <div className="space-y-3.5 text-xs text-slate-400">
+                            <div>
+                                <span className="font-800 text-brand-300 text-[11px] uppercase tracking-wider block mb-1">
+                                    Preschool Age Groups
+                                </span>
+                                <ul className="space-y-1 text-slate-300">
+                                    <li>• Play Group (2 – 3 yrs)</li>
+                                    <li>• Pre KG (3 – 4 yrs)</li>
+                                    <li>• Junior KG (4 – 5 yrs)</li>
+                                    <li>• Senior KG (5 – 6 yrs)</li>
+                                    <li>• Extended Daycare (Till 7:30 PM)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span className="font-800 text-amber-300 text-[11px] uppercase tracking-wider block mb-1">
+                                    After School Classes
+                                </span>
+                                <p className="text-slate-300 leading-relaxed text-[11px]">
+                                    Tuition · Hindi · Phonics · Abacus · Vedic Math · Handwriting · Drawing · Classical Dance · Carnatic Music
+                                </p>
+                            </div>
+                            <div>
+                                <span className="font-800 text-rose-300 text-[11px] uppercase tracking-wider block mb-1">
+                                    Special Course (For Ladies)
+                                </span>
+                                <p className="text-slate-300 leading-relaxed text-[11px]">
+                                    Montessori Teacher Training (Flexible Batches)
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    {/* 2 Campuses & Contact (4 cols) */}
-                    <div className="lg:col-span-4">
+                    {/* 2 Campuses & Contact (3 cols) */}
+                    <div className="lg:col-span-3">
                         <h4 className="font-display font-800 text-white text-base mb-4 tracking-tight">
                             Our 2 Chennai Campuses
                         </h4>
